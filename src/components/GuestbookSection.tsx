@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Send, Heart, Sparkles } from "lucide-react";
+import { Send, Heart, Sparkles, Trash2 } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import { GuestWish } from "../types/wedding.ts";
 
@@ -122,6 +122,13 @@ export const GuestbookSection: React.FC<GuestbookSectionProps> = ({
       onShowToast("មានបញ្ហាក្នុងការផ្ញើ សូមព្យាយាមម្តងទៀត។");
     } finally {
       setSubmitting(false);
+    }
+  };
+
+  const handleDelete = (id: string) => {
+    if (window.confirm("តើអ្នកប្រាកដជាចង់លុបសារនេះមែនទេ? (Are you sure you want to delete this?)")) {
+      setWishes((prev) => prev.filter((wish) => wish.id !== id));
+      onShowToast("បានលុបសារដោយជោគជ័យ");
     }
   };
 
@@ -269,7 +276,7 @@ export const GuestbookSection: React.FC<GuestbookSectionProps> = ({
           {wishes.map((w) => (
             <div
               key={w.id}
-              className="p-5 bg-white border border-[#e5d8be] shadow-xs relative transition-all duration-300 hover:-translate-y-1 hover:shadow-md animate-pop-in"
+              className="group p-5 bg-white border border-[#e5d8be] shadow-xs relative transition-all duration-300 hover:-translate-y-1 hover:shadow-md animate-pop-in"
             >
               <div className="flex items-start justify-between gap-2 mb-2">
                 <div>
@@ -278,9 +285,22 @@ export const GuestbookSection: React.FC<GuestbookSectionProps> = ({
                     {w.relationship}
                   </span>
                 </div>
-                <div className="flex items-center gap-1 text-[11px] text-[#93856d]">
-                  <Heart className="w-3 h-3 text-[#a84a53] fill-[#a84a53] animate-pulse" />
-                  <span>{w.date}</span>
+                
+                <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-1 text-[11px] text-[#93856d]">
+                    <Heart className="w-3 h-3 text-[#a84a53] fill-[#a84a53] animate-pulse" />
+                    <span>{w.date}</span>
+                  </div>
+
+                  {/* Delete Button - Only shows up when hovering over the card */}
+                  <button
+                    onClick={() => handleDelete(w.id)}
+                    className="text-gray-300 hover:text-red-500 transition-colors opacity-100 md:opacity-0 md:group-hover:opacity-100"
+                    title="លុបសារ (Delete message)"
+                    aria-label="លុបសារ"
+                  >
+                    <Trash2 className="w-4 h-4" />
+                  </button>
                 </div>
               </div>
               
