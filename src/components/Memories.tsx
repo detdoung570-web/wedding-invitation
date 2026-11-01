@@ -76,7 +76,7 @@ export const Memories: React.FC = () => {
             <div className="flex items-center justify-between w-full text-white tracking-widest uppercase mb-8">
               <span className="text-lg md:text-xl font-light">February</span>
               <div className="border-l border-r border-white/50 px-6 py-2">
-                <span className="block text-sm md:text-base font-light mb-1">Saturday</span>
+                <span className="block text-sm md:text-base font-light mb-1">Friday</span>
                 <span className="block text-3xl md:text-4xl font-serif">05th</span>
               </div>
               <span className="text-lg md:text-xl font-light">2026</span>
