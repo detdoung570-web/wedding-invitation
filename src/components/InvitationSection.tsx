@@ -96,7 +96,7 @@ export const InvitationSection: React.FC<InvitationSectionProps> = ({
               <div className="meta">
                 <strong>February 2027</strong>
                 <br />
-                ថ្ងៃសៅរ៍ ទី០៥ ខែកុម្ភៈ ឆ្នាំ២០២៧
+                ថ្ងៃសុក្រ ទី០៥ ខែកុម្ភៈ ឆ្នាំ២០២៧
                 <br />
                 ដោយសេចក្តីសោមនស្សរីករាយ
               </div>
