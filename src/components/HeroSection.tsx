@@ -97,7 +97,7 @@ export const HeroSection: React.FC = () => {
 
           <p className="hero-date-label">Together, a beautiful beginning</p>
           <p className="hero-date">05 · 02 · 2027</p>
-          <p className="hero-date-kh">ថ្ងៃសៅរ័ ទី០៥ ខែកុម្ភៈ ឆ្នាំ២០២៧</p>
+          <p className="hero-date-kh">ថ្ងៃសុក្រ ទី០៥ ខែកុម្ភៈ ឆ្នាំ២០២៧</p>
 
           <div className="hero-ornament" aria-hidden="true">
             ✧ <span>❦</span> ✧
