@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="roseCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#b8384b" />
+      <stop offset="60%" stop-color="#8e2b3c" />
+      <stop offset="100%" stop-color="#5a1824" />
+    </radialGradient>
+    <radialGradient id="rosePetalGrad" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#e86b7b" />
+      <stop offset="50%" stop-color="#c24357" />
+      <stop offset="100%" stop-color="#7c2231" />
+    </radialGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#698553" />
+      <stop offset="50%" stop-color="#4a6538" />
+      <stop offset="100%" stop-color="#2a3d1e" />
+    </linearGradient>
+    <filter id="flowerShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="5" stdDeviation="4" flood-color="#3c2212" flood-opacity="0.25" />
+    </filter>
+  </defs>
+  <g filter="url(#flowerShadow)">
+    <!-- Leaves -->
+    <path d="M70 120 C40 135 25 165 40 185 C65 190 95 165 85 130 Z" fill="url(#leafGrad)" />
+    <path d="M130 120 C160 135 175 165 160 185 C135 190 105 165 115 130 Z" fill="url(#leafGrad)" />
+    <path d="M55 155 Q70 145 80 135" fill="none" stroke="#87a56f" stroke-width="1.5" />
+    <path d="M145 155 Q130 145 120 135" fill="none" stroke="#87a56f" stroke-width="1.5" />
+    <!-- Outer Petals -->
+    <path d="M100 35 C120 20 155 30 160 55 C165 80 135 95 100 85 C65 95 35 80 40 55 C45 30 80 20 100 35 Z" fill="url(#rosePetalGrad)" opacity="0.9" />
+    <path d="M40 75 C20 95 25 130 50 145 C75 160 100 135 95 105 C75 80 50 65 40 75 Z" fill="url(#rosePetalGrad)" opacity="0.9" />
+    <path d="M160 75 C180 95 175 130 150 145 C125 160 100 135 105 105 C125 80 150 65 160 75 Z" fill="url(#rosePetalGrad)" opacity="0.9" />
+    <path d="M65 145 C80 170 120 170 135 145 C145 125 125 115 100 120 C75 115 55 125 65 145 Z" fill="url(#rosePetalGrad)" opacity="0.95" />
+    <!-- Inner Swirl Petals -->
+    <path d="M85 70 C75 85 80 110 100 115 C120 110 125 85 115 70 C105 55 95 55 85 70 Z" fill="url(#roseCenter)" />
+    <path d="M92 80 C90 92 105 98 110 88 C115 78 100 70 92 80 Z" fill="#e86b7b" opacity="0.8" />
+    <path d="M97 85 Q100 90 103 86" fill="none" stroke="#ffe3e6" stroke-width="1.5" stroke-linecap="round" />
+  </g>
+</svg>

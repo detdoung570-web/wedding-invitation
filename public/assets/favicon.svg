@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <radialGradient id="goldGrad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#fdf4d7" />
+      <stop offset="45%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#8a611b" />
+    </radialGradient>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="#fffdf7" stroke="url(#goldGrad)" stroke-width="2.5" />
+  <circle cx="50" cy="50" r="40" fill="none" stroke="#d4af37" stroke-dasharray="2,3" stroke-width="1" />
+  <path d="M50 8 L52 14 L58 16 L52 18 L50 24 L48 18 L42 16 L48 14 Z" fill="url(#goldGrad)" />
+  <path d="M50 76 L52 82 L58 84 L52 86 L50 92 L48 86 L42 84 L48 82 Z" fill="url(#goldGrad)" />
+  <text x="50" y="58" font-family="'Noto Serif Khmer', 'Moul', serif" font-size="28" font-weight="bold" fill="#76501f" text-anchor="middle">រ &amp; រ</text>
+</svg>
