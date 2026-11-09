@@ -8,37 +8,37 @@ interface GallerySectionProps {
 const GALLERY_PHOTOS: PhotoItem[] = [
   {
     id: 'g-1',
-    src: '/assets/couple-1.svg',
+    src: '/assets/couple-1.jpg',
     alt: 'រូបថតសម្រាប់អនុស្សាវរីយ៍ទី១',
     caption: 'Sweet moments',
   },
   {
     id: 'g-2',
-    src: '/assets/couple-2.svg',
+    src: '/assets/couple-3.jpg',
     alt: 'រូបថតសម្រាប់អនុស្សាវរីយ៍ទី២',
     caption: 'Forever us',
   },
   {
     id: 'g-3',
-    src: '/assets/couple-3.svg',
+    src: '/assets/couple-5.jpg',
     alt: 'រូបថតសម្រាប់អនុស្សាវរីយ៍ទី៣',
     caption: 'Together always',
   },
   {
     id: 'g-4',
-    src: '/assets/couple-4.svg',
+    src: '/assets/couple-4-1.jpg',
     alt: 'រូបថតសម្រាប់អនុស្សាវរីយ៍ទី៤',
     caption: 'Our love story',
   },
   {
     id: 'g-5',
-    src: '/assets/couple-5.svg',
+    src: '/assets/couple-5-1.jpg',
     alt: 'រូបថតសម្រាប់អនុស្សាវរីយ៍ទី៥',
     caption: 'Best day ever',
   },
   {
     id: 'g-6',
-    src: '/assets/couple-6.svg',
+    src: '/assets/couple-6.jpg',
     alt: 'រូបថតសម្រាប់អនុស្សាវរីយ៍ទី៦',
     caption: 'Always & forever',
   },

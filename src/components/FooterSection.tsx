@@ -1,14 +1,16 @@
-import React from 'react';
+import React from "react";
 
 interface FooterSectionProps {
   onShowToast: (msg: string) => void;
 }
 
-export const FooterSection: React.FC<FooterSectionProps> = ({ onShowToast }) => {
+export const FooterSection: React.FC<FooterSectionProps> = ({
+  onShowToast,
+}) => {
   const handleShare = async () => {
     const shareData = {
-      title: 'សំរិទ្ធ រតនា និង រាជ្យ ពៅរដ្ឋា — លិខិតអញ្ជើញមង្គលការ',
-      text: 'សូមគោរពអញ្ជើញចូលរួមពិធីមង្គលការ ថ្ងៃទី២៥ ខែមករា ឆ្នាំ២០២៧',
+      title: "ដូង ដេត និង ឃៀង លីណា — លិខិតអញ្ជើញមង្គលការ",
+      text: "សូមគោរពអញ្ជើញចូលរួមពិធីមង្គលការ ថ្ងៃទី០៥ ខែកុម្ភៈ ឆ្នាំ២០២៧",
       url: window.location.href,
     };
 
@@ -19,13 +21,13 @@ export const FooterSection: React.FC<FooterSectionProps> = ({ onShowToast }) => 
       }
       if (navigator.clipboard && window.isSecureContext) {
         await navigator.clipboard.writeText(window.location.href);
-        onShowToast('បានចម្លងតំណលិខិតអញ្ជើញ!');
+        onShowToast("បានចម្លងតំណលិខិតអញ្ជើញ!");
         return;
       }
-      onShowToast('សូមចម្លងតំណពីរបារអាសយដ្ឋាន');
+      onShowToast("សូមចម្លងតំណពីរបារអាសយដ្ឋាន");
     } catch (err: unknown) {
-      if (err instanceof Error && err.name !== 'AbortError') {
-        onShowToast('សូមចែករំលែកតំណពីកម្មវិធីរុករក');
+      if (err instanceof Error && err.name !== "AbortError") {
+        onShowToast("សូមចែករំលែកតំណពីកម្មវិធីរុករក");
       }
     }
   };
@@ -39,7 +41,7 @@ export const FooterSection: React.FC<FooterSectionProps> = ({ onShowToast }) => 
         <span className="full-name gold-shimmer-text">ឃៀង លីណា</span>
       </p>
       <p className="closing">
-        សូមអរគុណចំពោះក្តីស្រឡាញ់ ពាក្យជូនពរ និងវត្តមានដ៏ថ្លៃថ្លារបស់លោកអ្នក។{' '}
+        សូមអរគុណចំពោះក្តីស្រឡាញ់ ពាក្យជូនពរ និងវត្តមានដ៏ថ្លៃថ្លារបស់លោកអ្នក។{" "}
         <span className="heart">♥</span>
       </p>
       <div className="footer-actions">

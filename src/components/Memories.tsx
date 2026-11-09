@@ -41,7 +41,7 @@ export const Memories: React.FC = () => {
         {/* Left Photo */}
         <div className="w-full md:w-1/2 relative bg-black">
           <img
-            src="/path-to-your-main-photo.jpg" // <--- REPLACE WITH YOUR ACTUAL IMAGE PATH
+            src="/assets/cong1.jpg" // <--- REPLACE WITH YOUR ACTUAL IMAGE PATH
             alt="Dong Det and Khieng Lina"
             className="w-full h-full object-cover"
           />
@@ -76,7 +76,7 @@ export const Memories: React.FC = () => {
             <div className="flex items-center justify-between w-full text-white tracking-widest uppercase mb-8">
               <span className="text-lg md:text-xl font-light">February</span>
               <div className="border-l border-r border-white/50 px-6 py-2">
-                <span className="block text-sm md:text-base font-light mb-1">Saturday</span>
+                <span className="block text-sm md:text-base font-light mb-1">Friday</span>
                 <span className="block text-3xl md:text-4xl font-serif">05th</span>
               </div>
               <span className="text-lg md:text-xl font-light">2026</span>
@@ -141,7 +141,7 @@ export const Memories: React.FC = () => {
             {/* Bottom Left Image (Boat) */}
             <div className="relative w-full aspect-video bg-gray-200 rounded-sm overflow-hidden shadow-sm">
               <img
-                src="/path-to-your-boat-photo.jpg" // <--- REPLACE WITH YOUR ACTUAL IMAGE PATH
+                src="/assets/conot4.jpg" // <--- REPLACE WITH YOUR ACTUAL IMAGE PATH
                 alt="Traditional boat memory"
                 className="w-full h-full object-cover"
               />
@@ -152,7 +152,7 @@ export const Memories: React.FC = () => {
           <div className="w-full lg:w-1/2 flex justify-center">
             <div className="relative w-full max-w-md aspect-3/4 bg-gray-200 rounded-sm overflow-hidden shadow-lg border-4 border-[#F5EFE1]">
               <img
-                src="/path-to-your-portrait-photo.jpg" // <--- REPLACE WITH YOUR ACTUAL IMAGE PATH
+                src="/assets/conot3.jpg" // <--- REPLACE WITH YOUR ACTUAL IMAGE PATH
                 alt="Couple in traditional attire"
                 className="w-full h-full object-cover"
               />

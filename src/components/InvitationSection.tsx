@@ -96,7 +96,7 @@ export const InvitationSection: React.FC<InvitationSectionProps> = ({
               <div className="meta">
                 <strong>February 2027</strong>
                 <br />
-                ថ្ងៃសៅរ៍ ទី០៥ ខែកុម្ភៈ ឆ្នាំ២០២៧
+                ថ្ងៃសុក្រ ទី០៥ ខែកុម្ភៈ ឆ្នាំ២០២៧
                 <br />
                 ដោយសេចក្តីសោមនស្សរីករាយ
               </div>
@@ -184,7 +184,7 @@ export const InvitationSection: React.FC<InvitationSectionProps> = ({
               onClick={() =>
                 onOpenPhoto({
                   id: 'p-1',
-                  src: '/assets/couple-1.svg',
+                  src: '/assets/int1.jpg',
                   alt: 'កន្លែងដាក់រូបថតទី១',
                   caption: 'Sweet moments',
                   subcaption: 'Our favorite moments',
@@ -193,7 +193,7 @@ export const InvitationSection: React.FC<InvitationSectionProps> = ({
               aria-label="បើករូបថតទី១"
             >
               <img
-                src="/assets/couple-1.svg"
+                src="/assets/int1.jpg"
                 alt="កន្លែងដាក់រូបថតទី១"
                 loading="lazy"
               />
@@ -207,7 +207,7 @@ export const InvitationSection: React.FC<InvitationSectionProps> = ({
               onClick={() =>
                 onOpenPhoto({
                   id: 'p-2',
-                  src: '/assets/couple-2.svg',
+                  src: '/assets/int2.jpg',
                   alt: 'កន្លែងដាក់រូបថតទី២',
                   caption: 'Forever us',
                   subcaption: 'Side by side',
@@ -216,7 +216,7 @@ export const InvitationSection: React.FC<InvitationSectionProps> = ({
               aria-label="បើករូបថតទី២"
             >
               <img
-                src="/assets/couple-2.svg"
+                src="/assets/int2.jpg"
                 alt="កន្លែងដាក់រូបថតទី២"
                 loading="lazy"
               />
@@ -230,7 +230,7 @@ export const InvitationSection: React.FC<InvitationSectionProps> = ({
               onClick={() =>
                 onOpenPhoto({
                   id: 'p-3',
-                  src: '/assets/couple-3.svg',
+                  src: '/assets/int3.jpg',
                   alt: 'កន្លែងដាក់រូបថតទី៣',
                   caption: 'With love',
                   subcaption: 'Together, always',
@@ -239,7 +239,7 @@ export const InvitationSection: React.FC<InvitationSectionProps> = ({
               aria-label="បើករូបថតទី៣"
             >
               <img
-                src="/assets/couple-3.svg"
+                src="/assets/int3.jpg"
                 alt="កន្លែងដាក់រូបថតទី៣"
                 loading="lazy"
               />

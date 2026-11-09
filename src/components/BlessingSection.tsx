@@ -10,13 +10,13 @@ export const BlessingSection: React.FC<BlessingSectionProps> = ({ onOpenPhoto })
     <section className="blessing" aria-labelledby="blessingHeading">
       <img
         className="side-photo left cursor-pointer transition-transform hover:scale-105"
-        src="/assets/couple-4.svg"
+        src="/assets/couple-4.jpg"
         alt="រូបថតគូស្នេហ៍"
         loading="lazy"
         onClick={() =>
           onOpenPhoto({
             id: 'blessing-left',
-            src: '/assets/couple-4.svg',
+            src: '/assets/couple-4.jpg',
             alt: 'រូបថតគូស្នេហ៍',
             caption: 'Our love story',
           })
@@ -24,13 +24,13 @@ export const BlessingSection: React.FC<BlessingSectionProps> = ({ onOpenPhoto })
       />
       <img
         className="side-photo right cursor-pointer transition-transform hover:scale-105"
-        src="/assets/couple-5.svg"
+        src="/assets/couple-5.jpg"
         alt="រូបថតគូស្នេហ៍"
         loading="lazy"
         onClick={() =>
           onOpenPhoto({
             id: 'blessing-right',
-            src: '/assets/couple-5.svg',
+            src: '/assets/couple-5.jpg',
             alt: 'រូបថតគូស្នេហ៍',
             caption: 'Best day ever',
           })
