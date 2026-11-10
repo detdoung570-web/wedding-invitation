@@ -17,6 +17,7 @@ import { BottomNav } from "./components/BottomNav.tsx";
 import { PhotoLightbox } from "./components/PhotoLightbox.tsx";
 import { PhotoItem } from "./types/wedding.ts";
 import { Memories } from "./components/Memories.tsx";
+import PhotoAlbum from "./components/PhotoAlbum.jsx";
 
 export default function App() {
   const [scrollWidth, setScrollWidth] = useState<number>(0);
@@ -78,6 +79,7 @@ export default function App() {
         />
         <Memories />
         <CountdownSection />
+        <PhotoAlbum />
         <GuestbookSection onShowToast={showToast} />
       </main>
 
