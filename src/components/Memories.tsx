@@ -152,7 +152,7 @@ export const Memories: React.FC = () => {
           <div className="w-full lg:w-1/2 flex justify-center">
             <div className="relative w-full max-w-md aspect-3/4 bg-gray-200 rounded-sm overflow-hidden shadow-lg border-4 border-[#F5EFE1]">
               <img
-                src="/assets/conot3.jpg" // <--- REPLACE WITH YOUR ACTUAL IMAGE PATH
+                src="/assets/couple-6-1.jpg" // <--- REPLACE WITH YOUR ACTUAL IMAGE PATH
                 alt="Couple in traditional attire"
                 className="w-full h-full object-cover"
               />
